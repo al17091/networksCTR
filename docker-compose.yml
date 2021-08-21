@@ -4,6 +4,8 @@ services:
   dhcpd:
     container_name: DHCP_server
     build: ./dhcpd
+    depends_on: 
+      - "dns"
     restart: always
     tty: true
     networks: 
@@ -13,7 +15,7 @@ services:
     container_name: DNS_server
     build: ./dns
     tty: true
-    entrypoint: /bin/bash
+    restart: always
     networks: 
       br0:
         ipv4_address: 192.168.11.2
