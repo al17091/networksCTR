@@ -1,0 +1,23 @@
+$TTL    1D
+
+@   IN  SOA dns.regionem.jp. root.dns.regionem.jp. (
+    2021082101
+    3H
+    1H
+    1W
+    1D )
+
+    IN  NS      dns.regionem.jp.
+
+deus   IN  A       192.168.11.1
+dns    IN  A       192.168.11.2
+dhcp   IN  A       192.168.11.3
+
+phpadmin    IN  A       192.168.11.240
+digginos    IN  A       192.168.11.254	
+
+;dns     		IN      CNAME   linux			; CNAME は別名を示す。dns = linux ==> 192.168.0.2
+;www     		IN      CNAME   linux			; これらはお好みで名付けて下さい
+;smtp    		IN      CNAME   linux
+;pop     		IN      CNAME   linux
+;ftp     		IN      CNAME   linux

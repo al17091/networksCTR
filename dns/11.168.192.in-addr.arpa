@@ -1,0 +1,20 @@
+$TTL    1D
+
+@   IN  SOA dns.regionem.jp. root.dns.regionem.jp. (
+    2021082101
+    3H
+    1H
+    1W
+    1D )
+
+    IN  NS      dns.regionem.jp.
+
+    IN      PTR     regionem.jp.		; 解決するドメイン
+    IN      A       255.255.255.0		; サブネットマスク
+
+1   IN  PTR     deus.regionem.jp.    ; 192.168.11.1 の逆引き
+2   IN  PTR     dns.regionem.jp. ; 192.168.11.2 の逆引き
+3   IN  PTR     dhcp.regionem.jp.	; 192.168.11.3 の逆引き
+
+240 IN  PTR     phpadmin.regionem.jp.
+254 IN  PTR     digginos.regionem.jp.
