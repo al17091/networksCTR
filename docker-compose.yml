@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  dhcpd:
+    container_name: DHCP_server
+    build: ./dhcpd
+    restart: always
+    tty: true
+    networks: 
+      br0:
+        ipv4_address: 192.168.11.3
+  dns:
+    container_name: DNS_server
+    build: ./dns
+    tty: true
+    entrypoint: /bin/bash
+    networks: 
+      br0:
+        ipv4_address: 192.168.11.2
+
+networks:
+    br0:
+      external: true
