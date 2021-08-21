@@ -42,8 +42,8 @@ If you change the default settings of docker and make a bridge connection,
 you only need to specify the IP address.
 
 ## Default Settings
-### [DHCP](/dhcpd.conf.md)  
-### [DNS](/dns.conf.md)
+### [DHCP](/doc/dhcpd.conf.md)  
+### [DNS](/doc/dns.conf.md)
 
 ## Author
 [Koki Higashi](https://github.com/al17091)
