@@ -1,0 +1,6 @@
+[submodule "dhcpd"]
+	path = dhcpd
+	url = git@github.com:al17091/dhcpd-container.git
+[submodule "dns"]
+	path = dns
+	url = git@github.com:al17091/named-container.git
